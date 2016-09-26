@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fare Breakup"
+                android:id="@+id/textView38"
+                android:gravity="center"
+                android:textColor="@color/color_primary"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_primary"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INR 10/km"
+                    android:id="@+id/firstrate"
+                    android:textColor="@color/color_primary"
+                    android:textSize="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First 2 km"
+                    android:id="@+id/textView18"
+                    android:textSize="12dp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginBottom="10dp"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/color_primary"
+                android:id="@+id/view1122"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INR 8/km"
+                    android:id="@+id/afterrate"
+                    android:textColor="@color/color_primary"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="After 2 km"
+                    android:id="@+id/textView138"
+                    android:textSize="12dp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@color/color_primary"
+                android:id="@+id/viewvv"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INR 1/min"
+                    android:id="@+id/waitcharge"
+                    android:textColor="@color/color_primary"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wait charge"
+                    android:id="@+id/textView1383"
+                    android:textSize="12dp"
+                    android:textColor="@color/text_color"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:background="#ffffff">
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Airport rates may differ. Peak time charges may apply. Service tax extra."
+                android:id="@+id/textView19"
+                android:textSize="12dp"
+                android:textColor="@color/text_color"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                geekui:customTypeface="font/Quicksand_Book.otf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

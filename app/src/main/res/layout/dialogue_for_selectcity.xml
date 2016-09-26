@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:alpha="1"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.5"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:paddingBottom="70dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="30dp">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select City !!!"
+                    android:id="@+id/city"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="10dp"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:background="@color/color_primary"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_margin="2dp" />
+
+                <FrameLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emergencylistView"
+                        android:layout_gravity="center_horizontal"
+                     />
+
+
+
+                    <!--<apporio.com.vehicleapp.views.TypefaceTextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Please turn on GPS  !!!"-->
+                    <!--android:id="@+id/tex"-->
+                    <!--android:layout_gravity="bottom|center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="#a61c1e"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingRight="5dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--geekui:customTypeface="fonts/Aller_Lt.ttf"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textStyle="bold" />-->
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <!--<com.pkmmte.view.CircularImageView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/c"-->
+                <!--android:id="@+id/circleViewClose"-->
+                <!--geekui:civ_border="true"-->
+                <!--geekui:civ_borderColor="#000"-->
+                <!--geekui:civ_borderWidth="1dp"-->
+                <!--android:layout_gravity="top|right"-->
+                <!--android:layout_marginRight="5dp" />-->
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

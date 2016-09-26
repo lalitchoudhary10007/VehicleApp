@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary">
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/headingLogout"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color"
+            android:layout_marginBottom="2dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Are you sure want to log out ??"
+                android:id="@+id/msggRide"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/color_primary"
+                android:textSize="18dp"
+                geekui:customTypeface="font/Quicksand_Book.otf"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/yes"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    android:background="@drawable/loginbg"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/no"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    android:padding="10dp"
+                    android:background="@drawable/lightblacksolidbg"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

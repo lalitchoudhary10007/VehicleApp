@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "777972023785",
+    "firebase_url": "https://vehicleapp-1294.firebaseio.com",
+    "project_id": "vehicleapp-1294",
+    "storage_bucket": "vehicleapp-1294.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777972023785:android:4768e8bb5468f9aa",
+        "android_client_info": {
+          "package_name": "apporio.com.vehicleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777972023785-cft73aprl1hoe1cap5mcuffi4l254337.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apporio.com.vehicleapp",
+            "certificate_hash": "F0827749F5FABA3155A940F1AD8CC88559887426"
+          }
+        },
+        {
+          "client_id": "777972023785-e238j2d2e5274vcaotcitbhncgcocmnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnnPabm0L_i74usWwk1zXnWvWDxTxGi-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777972023785-e238j2d2e5274vcaotcitbhncgcocmnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

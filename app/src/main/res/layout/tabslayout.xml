@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+   android:background="#ffffff">
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:id="@+id/calllay"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/gallery2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/call"
+            android:layout_weight="1"
+            android:background="@drawable/drivercall"
+            android:focusableInTouchMode="true"
+            android:layout_marginBottom="2dp"
+            android:tint="@color/text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Driver"
+            android:id="@+id/CALLDRIVER"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/text_color" />
+
+
+    </LinearLayout>
+</FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/color_primary"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/ratell"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/news2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:background="#ffffff"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/ridert"
+            android:layout_weight="1"
+            android:background="@drawable/raterate"
+            android:layout_marginBottom="2dp"
+            android:tint="@color/text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Ride"
+            android:id="@+id/ride"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/text_color" />
+
+
+    </LinearLayout>
+</FrameLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/color_primary"/>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/sharell"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/calendar2"
+        android:gravity="center"
+        android:layout_marginBottom="1dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:id="@+id/shareimg"
+            android:layout_weight="1"
+            android:background="@drawable/sharer"
+            android:layout_marginBottom="2dp"
+            android:tint="@color/text_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Details"
+            android:id="@+id/share"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/text_color" />
+
+
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>

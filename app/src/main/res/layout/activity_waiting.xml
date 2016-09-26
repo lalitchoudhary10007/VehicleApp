@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    tools:context="apporio.com.vehicleapp.HomeScreen.WaitingActivity">
+
+
+    //////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+        <LinearLayout
+            android:id="@+id/waitingback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backwhitev"/>
+
+        </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Waiting For Driver"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progresslayout"
+        android:visibility="visible">
+
+
+        <include layout="@layout/progress_layout"></include>
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>

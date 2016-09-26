@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+
+
+            <FrameLayout
+                android:id="@+id/fifth_frame"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_layout_grey"
+                android:padding="7dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/thumb_up"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_color"
+                    android:id="@+id/view111"
+                   />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+//////////////////////////////
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:id="@+id/fifth_first_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Has Been Unloaded"
+                android:textColor="@color/text_color"
+                geekui:customTypeface="font/Quicksand_Bold.otf"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:id="@+id/fifth_second_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Completed"
+                android:textColor="@color/text_color"
+                geekui:customTypeface="font/Quicksand_Bold.otf"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/fifth_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="at 1:24 pm"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        ///////////////////////////////
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fifth_ago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 Min. ago"
+                android:textColor="@color/text_color"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+///////////////////////////first status
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                    <FrameLayout
+                        android:id="@+id/forth_frame"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_layout_grey"
+                        android:padding="7dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.4">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/truckright"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            //////////////////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:padding="2dp"
+                android:gravity="center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/forth_first_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Is Loaded And"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/forth_second_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="On The Way"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/forth_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="at 1:24 pm"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            ///////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/forth_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Min. ago"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+//////////////////////////second status
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                    <FrameLayout
+                        android:id="@+id/third_frame"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_layout_grey"
+                        android:padding="7dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.4">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/truckright"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            //////////////////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:padding="2dp"
+                android:gravity="center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/third_first_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Has Arrived At"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/third_second_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up Location"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/third_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="at 1:24 pm"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            ///////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/third_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Min. ago"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+    //////////////////////////////third state
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                    <FrameLayout
+                        android:id="@+id/second_frame"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/round_layout_grey"
+                        android:padding="7dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.4">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ontheway"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            //////////////////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:padding="2dp"
+                android:gravity="center">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/second_first_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Started Trip"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/second_second_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Is On The Way"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/second_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="at 1:24 pm"
+                    android:textColor="@color/text_color"
+                     android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            ///////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/second_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Min. ago"
+                    android:textColor="@color/text_color"
+                      android:textSize="10sp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/text_color"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="60dp"/>
+
+    </FrameLayout>
+
+
+    ////////////////////////////forth status
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="40dp"
+                        android:background="@color/text_color"
+                        />
+
+
+                    <FrameLayout
+                        android:id="@+id/first_frame"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/round_layout_grey"
+                        android:padding="7dp"
+                        android:layout_gravity="center"
+                       android:layout_marginBottom="20dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/order_accept"
+                            android:layout_gravity="center"/>
+
+                    </FrameLayout>
+
+                    <!--<View-->
+                        <!--android:layout_width="0.5dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/text_color"-->
+                        <!--android:layout_weight="1"/>-->
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            //////////////////////////////
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:padding="2dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/first_first_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Has Accepted The"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/first_second_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order"
+                    android:textColor="@color/text_color"
+                    geekui:customTypeface="font/Quicksand_Bold.otf"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/first_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="at 1:24 pm"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+            ///////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/first_ago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20 Min. ago"
+                    android:textColor="@color/text_color"
+                    android:textSize="10sp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/text_color"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginLeft="50dp"/>-->
+
+    </FrameLayout>
+
+
+    ////////////////////////done
+
+</LinearLayout>

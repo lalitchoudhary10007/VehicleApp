@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.HomeScreen.DriverdetailsActivity">
+
+    //////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+        <LinearLayout
+            android:id="@+id/driverdetailback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backwhitev"/>
+
+        </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Driver Detail"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+
+
+
+    <LinearLayout
+        android:id="@+id/detailLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapgh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:id="@+id/progressBarinsplash"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="bottom|center_horizontal" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_primary"
+                    android:layout_marginBottom="2dp" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:layout_marginBottom="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/logo"
+                        android:id="@+id/drivercircularimage"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:civ_border_width="1dp"
+                        app:civ_border_color="@color/color_primary"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5">
+
+                        <apporio.com.vehicleapp.views.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/drivername"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/color_primary"
+                            android:textSize="18dp"
+                            geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+                        <apporio.com.vehicleapp.views.TypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/drivercarname"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/color_primary"
+                        geekui:customTypeface="font/Quicksand_Book.otf"/>
+                        <apporio.com.vehicleapp.views.TypefaceTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/drivercarno"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/color_primary"
+                            android:textSize="12dp"
+                            geekui:customTypeface="font/Quicksand_Book.otf"/>
+                        <apporio.com.vehicleapp.views.CustomRatingBarGreen
+                            android:id="@+id/ratingBar1"
+                            app:halfStars="true"
+                            app:maxStars="5"
+                            android:layout_height="20dp"
+                            app:onlyForDisplay="true"
+                            android:layout_width="wrap_content"
+                            android:stepSize="0.1"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                       <FrameLayout
+                           android:id="@+id/Calltodriver"
+                           android:layout_width="65dp"
+                           android:layout_height="65dp"
+                           android:background="@drawable/round_layout"
+                           android:layout_gravity="center"
+                           android:padding="5dp"
+                           android:layout_marginRight="6dp">
+
+                           <ImageView
+                               android:layout_width="45dp"
+                               android:layout_height="45dp"
+                               android:background="@drawable/call_sms"
+                               android:tint="@color/white"
+                               android:layout_gravity="center"/>
+
+
+                       </FrameLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_primary"
+                    android:layout_marginBottom="2dp" />
+
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/cancelRide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="CANCEL RIDE"
+                    geekui:customTypeface="font/Quicksand_Book.otf"
+                    android:textColor="@color/white"
+                    android:background="@color/color_primary"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

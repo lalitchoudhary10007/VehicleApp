@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+<LinearLayout
+    android:id="@+id/headerprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profilecircleimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/defaultprof"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/color_primary"
+        android:layout_marginLeft="20dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/llforprofile">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/color_primary"
+            android:text="Spinno Singh"
+            android:textSize="18dp"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"/>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_primary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:text="spinno@gmail.com"
+            android:textSize="18dp"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

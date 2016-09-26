@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    tools:context="apporio.com.vehicleapp.Fragments.CurrentOrderFragment">
+
+    <apporio.com.vehicleapp.views.TypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Rides !!!!!"
+        android:id="@+id/allnocurrentrides"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        geekui:customTypeface="font/Quicksand_Bold.otf"
+        android:textSize="22dp"
+        android:layout_marginBottom="100dp"
+        android:visibility="gone"/>
+
+    <apporio.com.vehicleapp.views.ProgressWheel
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBarcurrent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        wheel:matProg_progressIndeterminate="true"
+        wheel:matProg_barColor="@color/color_primary" />
+
+
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/ridesListview"-->
+        <!--android:divider="@color/color_primary"-->
+        <!--android:dividerHeight="0dp"-->
+        <!--/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/receipentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/myridesback"
+            android:padding="3dp"
+            android:visibility="gone">
+
+       <ImageView
+           android:id="@+id/shipimage"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:scaleType="fitXY"
+           android:layout_weight="1"
+           android:layout_marginRight="10dp"/>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+              android:layout_marginLeft="0dp"
+              android:orientation="vertical"
+              android:padding="2dp">
+
+              <apporio.com.vehicleapp.views.TypefaceTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Apporio Infolabs"
+              android:id="@+id/namer"
+              android:textColor="@color/colorPrimary"
+              geekui:customTypeface="font/Quicksand_Bold.otf"
+              android:textSize="18dp"
+              android:singleLine="true"
+              android:textStyle="bold"/>
+
+              <apporio.com.vehicleapp.views.TypefaceTextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="#467, 4th Floor, Tower B1 Spaze Tech Park, sector-49, Sohna Road, Guegaon."
+                  android:id="@+id/addressr"
+                  android:textColor="@color/text_color"
+                  geekui:customTypeface="font/Quicksand_Bold.otf"
+                  android:textSize="14sp"
+                  android:maxLines="3"
+                  android:layout_marginTop="7dp"/>
+
+              <apporio.com.vehicleapp.views.TypefaceTextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="PH - 0124- 4832299"
+                  android:id="@+id/phoner"
+                  android:textColor="@color/text_color"
+                  geekui:customTypeface="font/Quicksand_Bold.otf"
+                  android:textSize="14sp"
+                  android:maxLines="3"
+                  android:layout_marginTop="5dp"/>
+
+          </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+    <include layout="@layout/order_history_status"></include>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

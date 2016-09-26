@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/layoutclick"
+    >
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="3 min"-->
+        <!--android:id="@+id/mins"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:textSize="12dp"-->
+        <!--android:textColor="@color/color_primary" />-->
+
+    <FrameLayout
+        android:id="@+id/layoutbackforcars"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        >
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:src="@drawable/car1"
+        android:id="@+id/whitecar"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        />
+
+        <!--<ImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:src="@drawable/black_car1"-->
+            <!--android:id="@+id/blackcar"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:visibility="gone"/>-->
+
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MINI"
+        android:id="@+id/category"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/color_primary"
+        android:textSize="12dp" />
+</LinearLayout>

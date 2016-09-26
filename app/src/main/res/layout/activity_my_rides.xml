@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.NavigationActivities.MyRidesActivity">
+
+
+    //////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+        <LinearLayout
+            android:id="@+id/myRidesback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backwhitev"/>
+
+        </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="My Orders"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="5dp"
+       android:orientation="vertical"
+       >
+
+       <!--<LinearLayout-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:orientation="vertical"-->
+           <!--android:background="@drawable/black_stroke"></LinearLayout>-->
+       <!---->
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <apporio.com.vehicleapp.views.TypefaceTextView
+               android:id="@+id/NewOrder"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:textSize="15dp"
+               android:text="New Orders"
+               geekui:customTypeface="font/Quicksand_Book.otf"
+               android:textColor="@color/white"
+               android:background="@drawable/blackbg"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"/>
+
+           <apporio.com.vehicleapp.views.TypefaceTextView
+               android:id="@+id/PastOrder"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:textSize="15dp"
+               android:text="Past Orders"
+               geekui:customTypeface="font/Quicksand_Book.otf"
+               android:textColor="@color/colorPrimary"
+               android:background="@drawable/black_stroke"
+               android:padding="10dp"
+               android:gravity="center"
+               android:layout_marginRight="5dp"
+               android:layout_weight="1"/>
+
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+    <!--<view-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color_primary"></view>-->
+
+
+         <FrameLayout
+             android:id="@+id/frame_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             ></FrameLayout>
+
+
+
+</LinearLayout>

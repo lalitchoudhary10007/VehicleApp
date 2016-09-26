@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.HomeScreen.AddRecipientActivity">
+
+
+    //////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+        <LinearLayout
+            android:id="@+id/backinpickimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backwhitev"
+                android:tint="@color/text_color"/>
+
+        </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Add Recepient"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:text="Recepient Name :-"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:textColor="@color/color_primary"
+            />
+
+        <EditText
+            android:id="@+id/Rname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:text="Recepient/Drop Address :-"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:textColor="@color/color_primary"
+            />
+
+        <apporio.com.vehicleapp.views.CustomAutoCompleteTextView
+            android:id="@+id/atv_places_in_shipment"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+             android:textSize="18dp"
+            android:visibility="visible"
+            android:singleLine="true"
+            android:background="@drawable/shadow_layout"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:text="Recepient Email-Id :-"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:textColor="@color/color_primary"
+            />
+
+        <EditText
+            android:id="@+id/Remail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="17dp"
+            android:text="Recepient Phone Number :-"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:textColor="@color/color_primary"
+            />
+
+        <EditText
+            android:id="@+id/Rphone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="phone"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+    </LinearLayout>
+
+
+    <apporio.com.vehicleapp.views.TypefaceTextView
+        android:id="@+id/Addrecepinetdone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:text="DONE"
+        geekui:customTypeface="font/Quicksand_Book.otf"
+        android:textColor="@color/white"
+        android:background="@drawable/blackbg"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+
+
+
+
+
+
+</LinearLayout>

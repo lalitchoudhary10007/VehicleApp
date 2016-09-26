@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.StartUpScreens.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/new_splash"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_gravity="center">
+
+          <apporio.com.vehicleapp.views.TypefaceTextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Log In"
+              android:textSize="30dp"
+              android:textColor="@color/white"
+              android:gravity="center"
+              geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+          <!--<LinearLayout-->
+              <!--android:layout_width="match_parent"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:orientation="horizontal"-->
+              <!--android:padding="10dp"-->
+              <!--android:layout_marginTop="10dp">-->
+
+              <!--<LinearLayout-->
+                  <!--android:layout_width="match_parent"-->
+                  <!--android:layout_height="wrap_content"-->
+                  <!--android:layout_weight="1">-->
+
+              <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                  <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                  <!--android:id="@+id/facebook_image"-->
+                  <!--android:layout_width="70dp"-->
+                  <!--android:layout_height="70dp"-->
+                  <!--android:src="@drawable/facebook"-->
+                  <!--app:civ_border_width="0dp"-->
+                  <!--app:civ_border_color="#FF000000"-->
+                 <!--android:layout_marginLeft="20dp" />-->
+              <!--</LinearLayout>-->
+              <!--<LinearLayout-->
+                  <!--android:layout_width="match_parent"-->
+                  <!--android:layout_height="wrap_content"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:layout_gravity="right"-->
+                  <!--android:gravity="right">-->
+
+              <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                  <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                  <!--android:id="@+id/twitter_image"-->
+                  <!--android:layout_width="70dp"-->
+                  <!--android:layout_height="70dp"-->
+                  <!--android:src="@drawable/twitter"-->
+                  <!--app:civ_border_width="0dp"-->
+                  <!--app:civ_border_color="#FF000000"-->
+                  <!--android:layout_gravity="right"-->
+                  <!--android:layout_marginRight="20dp"/>-->
+                  <!--</LinearLayout>-->
+
+          <!--</LinearLayout>-->
+
+          <!--<ImageView-->
+              <!--android:layout_width="40dp"-->
+              <!--android:layout_height="40dp"-->
+              <!--android:gravity="center"-->
+              <!--android:layout_gravity="center"-->
+              <!--android:layout_marginTop="10dp"-->
+              <!--android:background="@drawable/or"/>-->
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:id="@+id/email"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="2dp"
+                     android:hint="Email"
+                     android:textColor="@color/white"
+                     android:textCursorDrawable="@drawable/cursor_color"
+                     android:textColorHighlight="#ffffff"
+                     android:textColorHint="#ffffff"
+                     android:background="@null"
+                     android:textSize="20dp"
+                     android:layout_marginTop="10dp" />
+                 <FrameLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:background="@color/white"
+                         android:id="@+id/viewemail1"
+                         android:layout_marginBottom="10dp"
+                         android:visibility="visible" />
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:background="@color/color_primary"
+                         android:id="@+id/viewemail2"
+                         android:layout_marginBottom="10dp"
+                         android:visibility="gone" />
+                 </FrameLayout>
+
+                 <EditText
+                     android:layout_width="match_parent"
+                     android:layout_height="30dp"
+                     android:id="@+id/password"
+                     android:layout_gravity="center_horizontal"
+                     android:layout_marginBottom="2dp"
+                     android:hint="Password"
+                     android:textColor="@color/white"
+                     android:textCursorDrawable="@drawable/cursor_color"
+                     android:textColorHighlight="#ffffff"
+                     android:textColorHint="#ffffff"
+                     android:background="@null"
+                     android:textSize="20dp"
+                     android:layout_marginTop="10dp"
+                     android:inputType="textPassword"/>
+                 <FrameLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:background="@color/white"
+                         android:id="@+id/viewpass1"
+                         android:layout_marginBottom="10dp"
+                         android:visibility="visible" />
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="1dp"
+                         android:background="@color/color_primary"
+                         android:id="@+id/viewpass2"
+                         android:layout_marginBottom="10dp"
+                         android:visibility="gone" />
+                 </FrameLayout>
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/forgotpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    geekui:customTypeface="font/Quicksand_Book.otf"/>
+
+                 <apporio.com.vehicleapp.views.TypefaceTextView
+                     android:id="@+id/loginview"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Log In"
+                     android:background="@drawable/white_stroke1"
+                     android:textColor="@color/white"
+                     android:textSize="20dp"
+                     android:padding="10dp"
+                     android:layout_marginTop="20dp"
+                     android:gravity="center"
+                     geekui:customTypeface="font/Quicksand_Book.otf"/>
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dp"
+                     android:background="@color/white"
+                     android:id="@+id/view111"
+                     android:layout_marginTop="10dp"
+                     android:visibility="visible" />
+
+
+                 <apporio.com.vehicleapp.views.TypefaceTextView
+                     android:id="@+id/createaccnt"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Create an Account"
+                     android:textColor="@color/white"
+                     android:textSize="18dp"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"
+                     geekui:customTypeface="font/Quicksand_Book.otf"/>
+
+             </LinearLayout>
+
+
+      </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

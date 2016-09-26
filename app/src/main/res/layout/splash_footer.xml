@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center"
+        android:background="@android:color/transparent">
+
+        <!--<View-->
+            <!--android:id="@+id/view111"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/text_color"-->
+            <!--/>-->
+
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/loginwithfb"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/blackbg"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="40dp"-->
+            <!--android:layout_marginRight="40dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="10dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="2dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/fbwhlogo"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"/>-->
+
+                <!--<apporio.com.vehicleapp.views.TypefaceTextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Signup With Facebook"-->
+                    <!--android:layout_weight="0.3"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textStyle="bold"/>-->
+
+
+
+            <!--</LinearLayout>-->
+
+        <!--</FrameLayout>-->
+
+
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/loginfb"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"/>-->
+
+    <!--<View-->
+        <!--android:id="@+id/view1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/text_color"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/skipnextlayout"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp">
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:id="@+id/logintext"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:background="@drawable/blackbg"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/text_color"-->
+            <!--/>-->
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:gravity="center"
+            android:id="@+id/signuptext"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:background="@drawable/lightblacksolidbg"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

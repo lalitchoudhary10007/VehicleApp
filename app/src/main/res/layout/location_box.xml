@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_layout"
+        android:orientation="vertical"
+        >
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Selected Location"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/color_primary"
+            geekui:customTypeface="font/Quicksand_Bold.otf"
+            android:layout_marginTop="3dp"/>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/adressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Getting location"
+            android:textSize="16sp"
+            android:textColor="@color/color_primary"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

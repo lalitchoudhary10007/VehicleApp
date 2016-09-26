@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">VehicleApp</string>
+
+
+    <string name="closeDrawer">Close</string>
+    <string name="openDrawer">open</string>
+
+    <string name="facebook_app_id">242323346140658</string>
+
+    <string name="spinner_title">spinner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

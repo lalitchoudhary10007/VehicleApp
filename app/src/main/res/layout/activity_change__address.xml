@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.HomeScreen.Change_AddressActivity">
+
+
+    //////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+        <LinearLayout
+            android:id="@+id/changeaddrssback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/backwhitev"/>
+
+        </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Change Address"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="5dp">
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="5dp"
+             android:background="#ecf0f1">
+
+             <apporio.com.vehicleapp.views.TypefaceTextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:textSize="17dp"
+                 android:text="Enter your pick up point :-"
+                 geekui:customTypeface="font/Quicksand_Bold.otf"
+                 android:textColor="@color/color_primary"
+                 />
+
+             <apporio.com.vehicleapp.views.CustomAutoCompleteTextView
+                 android:id="@+id/atv_places2"
+                 android:layout_width="fill_parent"
+                 android:layout_height="40dp"
+                 android:layout_alignParentTop="true"
+                 android:gravity="center"
+                 android:visibility="visible"
+                 android:singleLine="true"
+                 android:background="@android:drawable/editbox_background_normal"/>
+
+         </LinearLayout>
+
+
+
+
+         <apporio.com.vehicleapp.views.TypefaceTextView
+             android:id="@+id/doneaddress"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:textSize="15dp"
+             android:text="DONE"
+             geekui:customTypeface="font/Quicksand_Book.otf"
+             android:textColor="@color/white"
+             android:background="@drawable/blackbg"
+             android:padding="10dp"
+             android:gravity="center"
+             android:layout_margin="20dp"/>
+
+
+
+     </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

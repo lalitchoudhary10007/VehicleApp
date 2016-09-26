@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:geekui="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:background="@android:drawable/dialog_holo_light_frame">
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary">
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call / Sms"
+                android:id="@+id/textView38"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_color"
+            android:layout_marginBottom="2dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+           <LinearLayout
+               android:id="@+id/calllayout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp">
+
+               <FrameLayout
+                   android:id="@+id/callframe"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/white_stroke"
+                   android:padding="5dp">
+                    <ImageView
+                       android:layout_width="40dp"
+                       android:layout_height="35dp"
+                       android:background="@drawable/calldriver"
+                       android:layout_gravity="center"/>
+
+               </FrameLayout>
+
+           </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/smslayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:id="@+id/smsframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lightblacksolidbg"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/smsdriver"
+                        android:layout_gravity="center"/>
+              </FrameLayout>
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_primary"
+            android:layout_marginBottom="2dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yes"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/color_primary"
+                android:textSize="15dp"
+                android:padding="10dp"
+                geekui:customTypeface="font/Quicksand_Bold.otf"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_primary"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"/>
+
+
+            <apporio.com.vehicleapp.views.TypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:id="@+id/no"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/color_primary"
+                android:padding="10dp"
+                geekui:customTypeface="font/Quicksand_Bold.otf"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

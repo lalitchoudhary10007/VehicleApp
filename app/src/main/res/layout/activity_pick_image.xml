@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="apporio.com.vehicleapp.HomeScreen.PickImageActivity">
+
+//////////////////////////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_primary"
+        >
+
+      <LinearLayout
+          android:id="@+id/backinpickimage"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:layout_marginLeft="10dp"
+          android:padding="3dp">
+
+          <ImageView
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/backwhitev"
+              android:tint="@color/text_color"/>
+
+      </LinearLayout>
+
+        <apporio.com.vehicleapp.views.TypefaceTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Pick Image"
+            geekui:customTypeface="font/Quicksand_Book.otf"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    ///////////////////////////////////////////////////
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="2dp"
+        android:background="#fff">
+
+        <FrameLayout
+            android:id="@+id/uploadImageFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <apporio.com.vehicleapp.views.AdjustableImageView
+            android:id="@+id/shipImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
+       <LinearLayout
+           android:id="@+id/uploadImagelayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@color/color_primary"
+           android:orientation="horizontal"
+           android:padding="5dp"
+           android:layout_gravity="center"
+           android:alpha="0.8">
+
+
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:background="@drawable/camerawhite"
+               android:tint="@color/text_color"/>
+
+           <apporio.com.vehicleapp.views.TypefaceTextView
+               android:id="@+id/pickimage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="5dp"
+               android:textSize="16dp"
+               android:text="Upload Image"
+               geekui:customTypeface="font/Quicksand_Book.otf"
+               android:textColor="@color/white"
+               android:layout_gravity="center"
+               android:layout_marginRight="5dp"/>
+
+       </LinearLayout>
+
+        </FrameLayout>
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/flipperLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/pager"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="250dp"-->
+                <!--tools:context=".MainActivity"-->
+                <!--android:background="#fff">-->
+            <!--</android.support.v4.view.ViewPager>-->
+
+            <!--<com.viewpagerindicator.CirclePageIndicator-->
+                <!--android:id="@+id/titles1"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="match_parent"-->
+                <!--app:strokeColor="@color/color_primary"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_gravity="bottom|center"-->
+               <!--/>-->
+
+
+
+
+        <!--</FrameLayout>-->
+
+
+
+
+    </FrameLayout>
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:background="#ecf0f1"
+          android:orientation="vertical">
+
+          <apporio.com.vehicleapp.views.TypefaceTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:textSize="17dp"
+              android:text="Take Picture of the items that you want to move ."
+              geekui:customTypeface="font/Quicksand_Book.otf"
+              android:textColor="@color/color_primary"
+              android:layout_gravity="center"
+              />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/color_primary"
+              android:visibility="visible"
+              android:layout_marginTop="5dp"
+              />
+         </LinearLayout>
+
+
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="5dp">
+
+          <apporio.com.vehicleapp.views.TypefaceTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:textSize="17dp"
+              android:text="Plz Select Approximate Weight:-"
+              geekui:customTypeface="font/Quicksand_Book.otf"
+              android:textColor="@color/color_primary"
+              />
+
+           <!--<EditText-->
+               <!--android:id="@+id/weight"-->
+               <!--android:layout_width="100dp"-->
+               <!--android:layout_height="wrap_content"-->
+               <!--android:textCursorDrawable="@drawable/cursor_color"-->
+               <!--android:background="@android:drawable/editbox_background_normal"-->
+               <!--android:inputType="number"/>-->
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:orientation="vertical"
+              android:background="@android:drawable/editbox_background_normal">
+
+
+           <Spinner
+               android:id="@+id/weightList"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+
+           </Spinner>
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+            ////////////////////////////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="17dp"
+                    android:text="Plz Select Quantity:-"
+                    geekui:customTypeface="font/Quicksand_Book.otf"
+                    android:textColor="@color/color_primary"
+                    />
+
+                <!--<EditText-->
+                <!--android:id="@+id/weight"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textCursorDrawable="@drawable/cursor_color"-->
+                <!--android:background="@android:drawable/editbox_background_normal"-->
+                <!--android:inputType="number"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:background="@android:drawable/editbox_background_normal">
+
+
+                    <Spinner
+                        android:id="@+id/quantity_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                    </Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+           ////////////////////////////////////////////
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="5dp">
+
+          <apporio.com.vehicleapp.views.TypefaceTextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:textSize="17dp"
+              android:text="Special Instructions:-"
+              geekui:customTypeface="font/Quicksand_Book.otf"
+              android:textColor="@color/color_primary"
+              />
+
+          <EditText
+              android:id="@+id/spclinstrnctions"
+              android:layout_width="match_parent"
+              android:layout_height="100dp"
+              android:background="@android:drawable/editbox_background_normal"/>
+
+      </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="10dp">
+
+
+                <apporio.com.vehicleapp.views.TypefaceTextView
+                    android:id="@+id/ridesestimate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="DONE"
+                    geekui:customTypeface="font/Quicksand_Book.otf"
+                    android:textColor="@color/white"
+                    android:background="@drawable/blackbg"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"/>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
